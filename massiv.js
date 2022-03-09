@@ -60,10 +60,66 @@
 
 // problem 157
 
+// let array = [7, 10, 5, 3, 2];
 
-// let arr = [3, 7, 10, 5, 3, 2];
+// for (let i = 0; i < array.length;) {
+//     console.log(array[i]);
+//     i += 2
+// }
+// for (let i = 1; i < array.length;) {
+//     console.log(array[i]);
+//     i += 2
+// }
 
 
+
+// 164 problem
+
+// let arr = [11, 14, 17, 20, 23];
+// let arr = [1];
+// let natija = false;
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] < arr[i + 1]) {
+//         natija = arr[i + 1] - arr[i]; 
+//     } else {
+//         natija;
+//     }
+// }
+
+// console.log(natija);
+
+
+// 166 problem
+
+// let arr = [4,-2, 5, -10, 12, 3, -4, -5];
+// let natija = true;
+
+// if (arr[0] < 0) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (i % 2 == 0 && arr[i] > 0) {
+//             natija = i;
+//             break;
+            
+//         } else if (i % 2 != 0 && arr[i] < 0){
+//             natija = i;
+//             break;
+//         }
+//     }
+// } else {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (i % 2 == 0 && arr[i] < 0) {
+//             natija = i;
+//             break;
+            
+//         } else if (i % 2 != 0 && arr[i] > 0){
+//             natija = i;
+//             break;
+//         }
+//     }
+// }
+  
+// console.log(natija);
 
 
 // problem 173
@@ -79,7 +135,3 @@
 //     }
 // }
 // console.log(b);
-
-
-
-
