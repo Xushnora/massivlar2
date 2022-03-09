@@ -39,21 +39,20 @@
 // problem 156
 
 
-let array = [7, 10, 5, 3, 2];
-let count = [];
+// let array = [7, 10, 5, 3, 2];
+// let count = [];
 
-for (let index = 1; index < array.length;) {
-    count[count.length] = array[index];
-    index += 2;
-    for (let j = 1; j < count.length; j++) {
-        if(count[j] > count[j + 1]) {
-            let a = count[j + 1];
-            count[j + 1] = count[j];
-            count[j] = a;
-        }
-    }
-}
-console.log(count);
+// for (let index = 1; index < array.length;) {
+//     count[count.length] = array[index];
+//     index += 2;
+//     for (let j = 1; j < count.length; j++) {
+//         if(count[j] > count[j + 1]) {
+//             let a = count[j + 1];
+//             count[j + 1] = count[j];
+//             count[j] = a;
+//         }
+//     }
+// }
 
 // console.log(count);
 
