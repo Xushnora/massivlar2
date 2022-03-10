@@ -476,21 +476,25 @@
 
 
 
-// problem 179
+// Problem 179 Fibonachi sonlar
 
-// let i;
-// let fib = [];
-// let n = 6;
+// let n = 9;
+// let a = 0;
+// let b = 1;
+// let c = 0;
+// let newArr = [];
 
-// fib[0] = 0;
-// fib[1] = 1;
-// for (i = 2; i <= n; i++) {
-//   fib[i] = fib[i - 2] + fib[i - 1];
-//   console.log(fib[i]);
+// for(let i = 1; i <= n; i++){
+//   c = a + b;
+//   a = b;
+//   b = c;
+//   newArr[newArr.length] = c;
 // }
 
+// console.log(newArr);
 
-// problem 180
+
+// problem 180  max va min
 
 // let arr = [1, 2, 10, 5, 6, 7];
 // let arr = [2, 10, 5, 8, 12];
