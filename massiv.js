@@ -38,16 +38,21 @@
 
 // problem 156 
 
+// let arr = [7, 10, 5, 3, 2];
+// let arr = []
+// let arr = [1, 2, 3, 10, -4, true];
 
-// let array = [7, 10, 5, 3, 2];
-// let array = [1, 2, 3, 10, -4, true];
-// let array = [];
+// let n = [],
+// result = [];
 
-
-// for (let index = array.length-2; index >=0;) {
-//     console.log(array[index]);
-//     index-=2;
+// for (let index = 1; index < arr.length; index+=2) {
+//     n.push(arr[index])
 // }
+// for (let index = n.length-1; index >= 0; index--) {
+//     result[result.length] = n[index]
+// }
+
+// console.log(result);
 
 
 
@@ -342,7 +347,7 @@
 // console.log(newArr);
 
 
-//  172 problem
+//  172 problem  o'zlashtirib oladi bir biriga
 
 // let a = [true, -5];
 // let b = [2, null];
@@ -372,7 +377,6 @@
 //     }
 // }
 // console.log(b);
-
 
 
 // problem 174
