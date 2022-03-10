@@ -514,6 +514,39 @@
 
 // problem 181   ishkal :(
 
+let a = [1, "t", 15, "t"];
+let b = [2, 4];
+let c = [];
+let count = 0;
+
+for (let i = 0; i < a.length; i++) {
+    for (let j = i - 1; j >= 0; j--) {
+        if (a[j] != a[i]) {
+            count = 0;
+        } else {
+            count = 1;
+            break;
+        }
+    }
+    if (count == 0) {
+        c[c.length] = a[i];
+    }
+}
+for (let i = 0; i < b.length; i++) {
+    for (let j = i - 1; j >= 0; j--) {
+        if (b[j] != b[i]) {
+            count = 0;
+        } else {
+            count = 1;
+            break;
+        }
+    }
+    if (count == 0) {
+        c[c.length] = b[i];
+    }
+}
+console.log(c);
+
 
 // problem 182 
 
