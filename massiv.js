@@ -456,43 +456,30 @@
 // problem 178
 
 // let arr =  [1, 2, 10, 5, 6, 7];
+// let arr = [2, 10, 5, 8, 12];
 // let natija = [];
 // let count = [];
-
+// let count2 = [];
 // for (let i = 0; i < arr.length; i++) {
-//     if (arr[i] < arr[i] + 1) {
+//     if (arr[i] < arr[i + 1]) {
 //         natija[natija.length] = arr[i];
-//         if (arr[i] > arr [i + 1]) {
-//             count[count.length] = arr[i];
+//     } else {
+//         natija[natija.length] = arr[i];
+//         for (let j = natija.length; j < arr.length; j++) {
+//             if (arr[j] < arr[j + 1]) {
+//                 count[count.length] = arr[j];
+//             } else {
+//                 count[count.length] = arr[j];
+//                 break;
+//             }
 //         }
-//     }
-    // for (let j = i; j < arr.length; j++) {
-    //     // if (arr[j] + 1 > arr[j]) {
-    //     //     natija[natija.length] = arr[j];
-    //     // }
-    // }
+//         break;}
 // }
-
-// console.log(count);
-
-
-// let arr = [2, 10, 5, 8, 12];
-// let arr = [9, 14, 3, 2, 1];
-// let arr =  [1, 2, 5, 3, 4, 5, 6, -1, -2, -3, -4, -3, -2, -1, 0, 1];
-// let result = [];
-// let sometime = [];
-
-// for (let i = 0; i < arr.length; i++) {
-//     if(arr[i]+1 == arr[i+1]) {
-//         sometime.push(arr[i]);
-//     }
-//     else {
-//         sometime.push(arr[i]);
-//         result = result.length < sometime.length ? sometime : result;
-//         sometime = [];
-//     }
+// if (natija.length >= count.length) {
+//     console.log(natija);
+// } else {
+//     console.log(count);
 // }
-// console.log(result);
 
 
 // Problem 179 Fibonachi sonlar
@@ -531,34 +518,34 @@
 // console.log("max:", max, "min:", min);
 
 
-// problem 181 
+// problem 181  chiqdi )
 
-let a = [1, "t", 15, "t"];
-let b = [2, 4];
+// let a = [1, "t", 15, "t"];
+// let b = [2, 4];
 // let a = [1, 5, 12, 5, -10];
 // let b = [12, 6, 1];
-let c = [];
-let newArr = [];
-let count = 0;
+// let c = [];
+// let newArr = [];
+// let count = 0;
 
-for (let i = 0; i < b.length; i++) {
-    a[a.length] = b[i];
-}
-for (let i = 0; i < a.length; i++) {
-    for (let j = i - 1; j >= 0; j--) {
-        if (a[j] != a[i]) {
-            count = 0;
-        } else {
-            count = 1;
-            break;
-        }
-    }
-    if (count == 0) {
-        newArr[newArr.length] = a[i];
-    }
-}
+// for (let i = 0; i < b.length; i++) {
+//     a[a.length] = b[i];
+// }
+// for (let i = 0; i < a.length; i++) {
+//     for (let j = i - 1; j >= 0; j--) {
+//         if (a[j] != a[i]) {
+//             count = 0;
+//         } else {
+//             count = 1;
+//             break;
+//         }
+//     }
+//     if (count == 0) {
+//         newArr[newArr.length] = a[i];
+//     }
+// }
 
-console.log(newArr);
+// console.log(a);
 
 
 // problem 182 
