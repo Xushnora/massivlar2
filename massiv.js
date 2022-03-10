@@ -456,24 +456,43 @@
 // problem 178
 
 // let arr =  [1, 2, 10, 5, 6, 7];
+// let natija = [];
+// let count = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] < arr[i] + 1) {
+//         natija[natija.length] = arr[i];
+//         if (arr[i] > arr [i + 1]) {
+//             count[count.length] = arr[i];
+//         }
+//     }
+    // for (let j = i; j < arr.length; j++) {
+    //     // if (arr[j] + 1 > arr[j]) {
+    //     //     natija[natija.length] = arr[j];
+    //     // }
+    // }
+// }
+
+// console.log(count);
+
+
 // let arr = [2, 10, 5, 8, 12];
 // let arr = [9, 14, 3, 2, 1];
 // let arr =  [1, 2, 5, 3, 4, 5, 6, -1, -2, -3, -4, -3, -2, -1, 0, 1];
 // let result = [];
 // let sometime = [];
 
-// for (let index = 0; index < arr.length; index++) {
-//     if(arr[index]+1 == arr[index+1]) {
-//         sometime.push(arr[index])
+// for (let i = 0; i < arr.length; i++) {
+//     if(arr[i]+1 == arr[i+1]) {
+//         sometime.push(arr[i]);
 //     }
 //     else {
-//         sometime.push(arr[index])
-//         result = result.length<sometime.length ? sometime : result
-//         sometime = []
+//         sometime.push(arr[i]);
+//         result = result.length < sometime.length ? sometime : result;
+//         sometime = [];
 //     }
 // }
 // console.log(result);
-
 
 
 // Problem 179 Fibonachi sonlar
@@ -512,13 +531,19 @@
 // console.log("max:", max, "min:", min);
 
 
-// problem 181   ishkal :(
+// problem 181 
 
 let a = [1, "t", 15, "t"];
 let b = [2, 4];
+// let a = [1, 5, 12, 5, -10];
+// let b = [12, 6, 1];
 let c = [];
+let newArr = [];
 let count = 0;
 
+for (let i = 0; i < b.length; i++) {
+    a[a.length] = b[i];
+}
 for (let i = 0; i < a.length; i++) {
     for (let j = i - 1; j >= 0; j--) {
         if (a[j] != a[i]) {
@@ -529,23 +554,11 @@ for (let i = 0; i < a.length; i++) {
         }
     }
     if (count == 0) {
-        c[c.length] = a[i];
+        newArr[newArr.length] = a[i];
     }
 }
-for (let i = 0; i < b.length; i++) {
-    for (let j = i - 1; j >= 0; j--) {
-        if (b[j] != b[i]) {
-            count = 0;
-        } else {
-            count = 1;
-            break;
-        }
-    }
-    if (count == 0) {
-        c[c.length] = b[i];
-    }
-}
-console.log(c);
+
+console.log(newArr);
 
 
 // problem 182 
